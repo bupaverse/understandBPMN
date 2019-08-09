@@ -1,0 +1,25 @@
+Package: understandBPMN
+Type: Package
+Title: Calculator of Understandability Metrics for BPMN
+Version: 1.1.0
+Author: Jonas Lieben
+Maintainer: Jonas Lieben <jonas.lieben@uhasselt.be>
+Description: Calculate several understandability metrics of BPMN models. BPMN stands for business process modelling notation and is a language for expressing business processes into business process diagrams. Examples of these understandability metrics are: average connector degree, maximum connector degree, sequentiality, cyclicity, diameter, depth, token split, control flow complexity, connector mismatch, connector heterogeneity, separability, structuredness and cross connectivity. See R documentation and paper on metric implementation included in this package for more information concerning the metrics.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp
+Imports:
+	XML,
+	dplyr,
+	purrr,
+	tidyr, 
+	tibble,
+	Rcpp (>= 0.12.15),
+	devtools,
+	R.utils
+RoxygenNote: 6.0.1
+Depends: R(>= 2.10.0)
+Suggests: knitr,
+    rmarkdown,
+    testthat
